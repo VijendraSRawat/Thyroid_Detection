@@ -10,7 +10,7 @@ This repository contains code for detecting thyroid disease using machine learni
 
 ## Code Files
 
-The repository contains the following code files in the `[Code](https://github.com/VijendraSRawat/Thyroid_Detection/tree/main/Code)` folder:
+The repository contains the following code files in the [Code](https://github.com/VijendraSRawat/Thyroid_Detection/tree/main/Code) folder:
 
 - `[Data_preprocessing.py](https://github.com/VijendraSRawat/Thyroid_Detection/blob/main/Code/data_preprocessing.py)`
 - `[Feature_selection.py](https://github.com/VijendraSRawat/Thyroid_Detection/blob/main/Code/Feature_selection.py)`
