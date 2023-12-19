@@ -1,1 +1,86 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thyroid Disease Detection</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+    }
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      color: #333;
+      font-size: 18px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    h3 {
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Thyroid Disease Detection</h1>
+  <img src="https://www.maxlab.co.in/category/1667462132.jpg" alt="Thyroid Image" />
+  <p style="text-align: center; color: #333; font-size: 14px;">Image Source: maxlab.co.in</p>
+  <h3>Enter the below fields and this model will predict whether you have thyroidal disease.</h3>
+  <form action="{{ url_for('predict')}}" method="POST">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <div style="width: 48%;">
+        <label for="fti">FTI value:</label><br>
+        <input type="number" id="fti" name="fti" required="required" style="font-size:16pt"><br><br>
+        <label for="tt4">TT4 value:</label><br>
+        <input type="number" id="tt4" name="tt4" required="required" style="font-size:16pt"><br><br>
+      </div>
+      <div style="width: 48%;">
+        <label for="tsh">TSH value:</label><br>
+        <input type="number" id="tsh" name="tsh" required="required" step="any" style="font-size:16pt"><br><br>
+        <label for="t4u">T4U value:</label><br>
+        <input type="number" id="t4u" name="t4u" required="required" step="any" style="font-size:16pt"><br><br>
+      </div>
+    </div>
+    <button type="submit">Predict</button>
+  </form>
+  <h3>{{predict}}</h3>
+</body>
+</html>
