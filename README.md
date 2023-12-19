@@ -1,6 +1,6 @@
 # Thyroid Disease Detection
 
-![Thyroid Image](https://www.maxlab.co.in/category/1667462132.jpg)
+![Thyroid Image](https://drive.google.com/file/d/1PIWsR2w7d4nZbf3WQXX5wVIZ0f1TmYWd/view?usp=sharing)
 
 *Image Source: maxlab.co.in*
 
