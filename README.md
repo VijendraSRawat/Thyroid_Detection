@@ -43,6 +43,3 @@ The machine learning models used for prediction are deployed using Flask. The mo
 - Random Forest Model
 - XGBoost Model
 
-## Running the Web Application
-
-To run the web application, execute the [app.py](https://github.com/VijendraSRawat/Thyroid_Detection/blob/main/app.py) file and access the provided URL. The application will predict whether the user has thyroidal disease based on the input values.
